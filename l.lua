@@ -28,7 +28,7 @@ local LocalPlayer = Players.LocalPlayer
 local ReelInEvent = ReplicatedStorage:WaitForChild("FishEvents"):WaitForChild("ReelIn")
 
 -- The ID of the rarest fish in the game. A cheater can easily find this by exploring game assets.
-local MYTHICAL_FISH_ID = "Mythical_Sea_Dragon"
+local MYTHICAL_FISH_ID = "156"
 
 -- Exploiters use a function called `hookfunction` or `newcclosure` to intercept function calls.
 -- Here, we're intercepting the FireServer method of the ReelInEvent.
@@ -53,7 +53,7 @@ end)
 
 setreadonly(ReelInEvent, true)
 
-print("[Exploit] Luck modifier is active. All caught fish will be reported as Mythical_Sea_Dragon.")
+print("[Exploit] Luck modifier is active. All caught fish will be reported as Giant Squid.")
 
 -- Now, the cheater just needs to fish normally (or use an auto-fish bot).
 -- Every time the bot or player reels in a fish, this hooked function will
